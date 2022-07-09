@@ -55,11 +55,13 @@ export default function LoginButton() {
         className="text-white font-bold flex p-2 rounded-xl bg-gray-900 gap-2"
         onClick={logout}
       >
-        <img
-          className="w-6 h-6 rounded-full"
-          src={user.avatar}
-          alt={user.name}
-        />
+        <picture>
+          <img
+            className="w-6 h-6 rounded-full"
+            src={user.avatar}
+            alt={user.name}
+          />
+        </picture>
         <span>@{user.userName}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
